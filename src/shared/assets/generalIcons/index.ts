@@ -1,4 +1,4 @@
-import arrowDown from "./arrow-Down.png";
+import arrowDown from "./arrow-down.png";
 import arrowLeft from "./arrow-left.png";
 import arrowRight from "./arrow-left.png";
 import arrowUp from "./arrow-up.png";
