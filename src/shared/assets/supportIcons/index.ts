@@ -8,7 +8,7 @@ import trading from "./trading.png";
 import wallet from "./Wallet.png";
 import withDraw from "./Withdraw.png";
 
-export {
+export default {
       account,
       depositedFunds,
       funding,

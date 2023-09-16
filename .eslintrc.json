@@ -1,3 +1,61 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "simple-import-sort"
+  ],
+  "extends": "google",
+  "rules": {
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "quotes": [
+      "warn",
+      "double"
+    ],
+    "linebreak-style": "off",
+    "indent": [
+      "off"
+    ],
+    "max-len": [
+      "off",
+      100
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          [
+            "^react",
+            "^@?\\w"
+          ],
+          [
+            "^(@|components)(/.*|$)"
+          ],
+          [
+            "^\u0000"
+          ],
+          [
+            "^\\.\\.(?!/?$)",
+            "^\\.\\./?$"
+          ],
+          [
+            "^\\./(?=.*/)(?!/?$)",
+            "^\\.(?!/?$)",
+            "^\\./?$"
+          ],
+          [
+            "^.+\\.?(scss)$"
+          ]
+        ]
+      }
+    ],
+    "require-jsdoc": "off",
+    "simple-import-sort/exports": "error",
+    "no-unused-vars": "warn",
+    "operator-linebreak": "off"
+  }
 }

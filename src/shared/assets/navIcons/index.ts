@@ -8,4 +8,4 @@ import staking from "./staking.png";
 import support from "./support.png";
 import trading from "./trading.png";
 
-export { about, blog, faq, funding, liquidity, portfolioValue, staking, support, trading };
+export default { about, blog, faq, funding, liquidity, portfolioValue, staking, support, trading };

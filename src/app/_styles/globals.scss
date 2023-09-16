@@ -1,7 +1,88 @@
 @import "./variables.scss";
 
+@font-face {
+  font-family: "Aeonik";
+  src: url("../../shared/assets/fonts/Aeonik-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../../shared/assets/fonts/Aeonik-Regular.otf");
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-weight: 400;
+  color: var(--main-colors-black);
+}
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  font-family: "Aeonik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  color: var(--gray-2);
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.font__large-medium {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.font__large-regular {
+  font-size: 20px;
+}
+
+
+.font__medium-medium {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font__medium-regular {
+  font-size: 16px;
+}
+
+.font__small-medium {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.font__small-regular {
+  font-size: 14px
+}
+
+.font__smallest-medium {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.font__smallest-regular {
+  font-size: 12px;
 }

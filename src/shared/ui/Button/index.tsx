@@ -1,14 +1,14 @@
+import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import clsx from "clsx";
-import cls from "./Button.module.scss";
 
-import { ButtonHTMLAttributes, ReactNode, memo } from "react";
+import cls from "./Button.module.scss";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
       className?: string;
       children?: ReactNode;
 }
 
-export const Button = (props: ButtonProps) => {
+export const Button: FC<ButtonProps> = (props) => {
       const { children, className, ...otherProps } = props;
 
       return (
