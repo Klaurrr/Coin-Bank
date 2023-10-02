@@ -1,3 +1,7 @@
 import { Header } from "./ui/Header";
 
-export { Header };
+const foo = () => {
+      return true;
+};
+
+export { foo, Header };

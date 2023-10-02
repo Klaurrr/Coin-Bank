@@ -1,10 +1,12 @@
 .header {
     background: rgba(255, 255, 255, 0.40);
     backdrop-filter: blur(40px);
-    padding: 24px 48px;
+    padding: 0 48px;
+    margin: 24px 0;
     height: 48px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .nav {
         display: flex;
@@ -13,6 +15,15 @@
 
         &>p {
             cursor: pointer;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 16px;
+
+        .sign__button {
+            color: var(--main-colors-black);
         }
     }
 

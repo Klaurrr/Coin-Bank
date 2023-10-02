@@ -6,7 +6,10 @@
     "import",
     "simple-import-sort"
   ],
-  "extends": "google",
+  "extends": [
+    "google",
+    "plugin:storybook/recommended"
+  ],
   "rules": {
     "object-curly-spacing": [
       "warn",

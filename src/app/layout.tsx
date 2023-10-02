@@ -1,4 +1,6 @@
+"use client";
 import type { Metadata } from "next";
+import { usePathname } from "next/navigation";
 
 import { Header } from "@/widgets/Header";
 
@@ -10,11 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+      const path = usePathname();
+
       return (
             <html lang="en">
                   <body>
-                        <Header />
-                        {children}
+                        {path !== "/Dashboard" && <Header />}
+                        <div className={path !== "/Dashboard" ? "content__wrapper" : ""}>
+                              {children}
+                        </div>
                   </body>
             </html>
       );

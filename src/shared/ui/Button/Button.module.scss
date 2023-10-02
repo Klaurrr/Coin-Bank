@@ -1,0 +1,29 @@
+.button {
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.button__primary {
+    background: var(--main-colors-primary, #5235E8);
+    color: var(--main-colors-white);
+}
+
+.button__secondary {
+    border: 1px solid var(--primary-shades-400);
+    background: var(--main-colors-white);
+    color: var(--main-colors-primary);
+}
+
+.button__large {
+    padding: 11px 24px;
+
+}
+
+.button__small {
+    padding: 10px 24px;
+}

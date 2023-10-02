@@ -18,12 +18,12 @@
   margin: 0;
   font-weight: 400;
   color: var(--main-colors-black);
+  font-family: "Aeonik", sans-serif;
 }
 
 body {
   margin: 0 auto;
   width: 1440px;
-  font-family: "Aeonik", sans-serif;
 }
 
 h1,
@@ -85,4 +85,8 @@ h4 {
 
 .font__smallest-regular {
   font-size: 12px;
+}
+
+.content__wrapper {
+  padding: 0 160px;
 }

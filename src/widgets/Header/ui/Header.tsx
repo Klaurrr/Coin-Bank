@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Logo from "@/shared/assets/generalIcons/Logo.svg";
 import navIcons from "@/shared/assets/navIcons";
-import { DropDown } from "@/shared/ui";
+import { Button, DropDown } from "@/shared/ui";
 
 import cls from "./Header.module.scss";
 
@@ -52,6 +52,14 @@ export const Header = () => {
                               </p>
                         </DropDown>
                         <p className="font__small-regular">Developers</p>
+                  </div>
+                  <div className={cls.buttons}>
+                        <Button variant={"secondary"} size={"large"} className={cls.sign__button}>
+                              Sign In
+                        </Button>
+                        <Button variant={"secondary"} size={"large"}>
+                              Get Started
+                        </Button>
                   </div>
             </header>
       );
